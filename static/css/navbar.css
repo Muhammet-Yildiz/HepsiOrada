@@ -1,0 +1,261 @@
+.emp-header {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: 15000;
+    background-color: white;
+}
+
+header .logo {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    margin-right: 6px;
+}
+
+header .logo h2 a {
+    font-family: 'Cairo', sans-serif;
+    color: whitesmoke;
+    color: #FF6000;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid rgba(235, 234, 234, 0.7);
+    width: 100%;
+    height: 90px;
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    header.container {
+        max-width: 1200px !important;
+        margin: 0 !important;
+    }
+    .logo a {
+        font-size: 1.6rem;
+    }
+}
+
+#User-options {
+    width: 89%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#User-options a {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    transition: 250ms ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#User-options a:hover {
+    color: #FF6000;
+}
+
+#User-options a i {
+    font-size: 1.2rem;
+}
+
+#login-register {
+    position: relative;
+    width: 130px;
+    height: auto;
+    margin: 0 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+#login-register #login_g {
+    text-align: center;
+}
+
+#login-register #log_regis_options {
+    background-color: white;
+    position: absolute;
+    width: 175px;
+    height: 120px;
+    top: 35px;
+    left: -25px;
+    list-style-type: none;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 0 2px 4px rgba(206, 206, 206, 0.2);
+    border: 1px solid rgba(218, 217, 217, 0.6);
+}
+
+#log_regis_options li {
+    margin: 8px 10px;
+    text-align: center;
+    padding: 8px;
+}
+
+#log_regis_options li.log_li {
+    background-color: #f27a1a;
+    font-size: 0.8rem;
+    font-weight: 520;
+}
+
+#log_regis_options li.log_li a {
+    color: white;
+    font-family: serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#log_regis_options li.reg_li {
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 0.8rem;
+    font-weight: 520;
+}
+
+#log_regis_options li.reg_li a {
+    font-family: serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#hesabım {
+    position: relative;
+    width: 93px;
+    height: auto;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+#hesabım #account_a {
+    text-align: center;
+}
+
+#hesabım #account_options {
+    background-color: white;
+    position: absolute;
+    width: 190px;
+    height: 305px;
+    top: 35px;
+    left: -35px;
+    list-style-type: none;
+    padding: 10px;
+    display: none;
+    box-shadow: 1px 2px 10px 4px rgba(216, 216, 216, 0.5);
+}
+
+#account_options li span {
+    color: #ff6709;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#account_options li {
+    padding: 5px;
+}
+
+#account_options li:hover i {
+    color: #FF6000;
+    transition: 150ms ease;
+}
+
+#account_options li:hover a {
+    color: #FF6000;
+}
+
+#account_options li i {
+    color: rgb(27, 27, 27);
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+#account_options li a {
+    font-family: 'Dosis', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#favorilerim {
+    position: relative;
+    width: 110px;
+    margin: 0 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#favorilerim a i {
+    margin-right: 1px;
+    font-size: 1.2rem;
+    background-color: white;
+    border: none;
+}
+
+#sepetim {
+    position: relative;
+    width: 94px;
+    padding: 0 6px;
+}
+
+#sepetim a span {
+    margin-left: 5px;
+}
+
+#sepetim i {
+    font-size: 1.2rem;
+    margin-right: 6px;
+    align-self: center;
+}
+
+#sepetim .itemsayısı {
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white;
+    top: -2px;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    background-color: #FF6000;
+    border-radius: 50%;
+    color: white;
+}
+
+.search-form form {
+    padding: 2px;
+    position: relative;
+    width: 504px !important;
+    margin-right: 3rem;
+    margin-left: 3em;
+}
+
+.search-form input {
+    background-color: #F3F3F3;
+    border: none;
+    outline: 0;
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-form button {
+    position: absolute;
+    border: none;
+    color: #FF6000;
+    right: 12px;
+    top: 16px;
+    background-color: transparent;
+}
+
+.privatetitle {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+}

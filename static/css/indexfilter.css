@@ -1,0 +1,17 @@
+.filter_form {
+    padding: 1rem 5rem;
+}
+
+#id_category {
+    border: none;
+}
+
+#id_color {
+    border: none;
+    width: 350px;
+    height: 160px;
+    border: red solid 2px;
+    overflow: hidden;
+    outline: 0;
+    margin: 2rem;
+}

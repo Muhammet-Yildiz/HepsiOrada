@@ -1,0 +1,575 @@
+.right_sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -540px;
+    padding-top: 5.8rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    z-index: 9999999;
+    background-color: white;
+    transition: 450ms ease !important;
+}
+
+.side_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.productİnfo_emp {
+    margin-bottom: 1rem;
+    display: flex;
+    position: relative;
+}
+
+.productİnfo_emp .mex-ProducImg {
+    border: rgb(199, 197, 198) solid 1px;
+    width: 138px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.productİnfo_emp .mex-ProducImg img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.productİnfo_emp .mex-ProductSec2 {
+    width: 100%;
+    height: 75px;
+}
+
+.mex-ProductSec2 .com_title {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+    color: rgb(73, 73, 73);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mex-ProductSec2 .mex-evaluate {
+    font-size: 0.8rem;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.mex-ProductSec2 .mex-evaluate span {
+    margin-right: 3px;
+}
+
+.mex-ProductSec2 .mex-evaluate span i {
+    color: #f5ab23;
+    margin-right: 2px;
+    font-size: 0.8rem;
+}
+
+.seeCommentlink {
+    color: black;
+    font-family: 'Mukta';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seeCommentlink:hover {
+    color: #FF6000 !important;
+    text-decoration: none;
+}
+
+.mex-ProductSec2 .mex-evaluate span span {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.mex-ProductSec2 .mex-evaluate div {
+    font-family: sans-serif;
+    font-weight: 500;
+    border: transparent solid 1px;
+}
+
+.mex-ProductSec2 .mex-evaluate div span {
+    font-size: 0.7rem;
+    border: transparent solid 1px;
+}
+
+.mex-size-color {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+.mex-size-color label {
+    margin: 0 7px;
+    color: rgb(172, 172, 172);
+}
+
+.mex-size-color div span {
+    font-size: 0.7rem;
+    margin-right: 4px;
+}
+
+.mex-size-color div b {
+    font-size: 0.7rem;
+}
+
+.comment_field {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 2.6rem;
+    flex-direction: column;
+}
+
+.comment_field .Ratings_star {
+    margin-top: -24px;
+    position: relative !important;
+}
+
+.comment_field .Ratings_star i {
+    font-size: 2.5rem;
+}
+
+.comment_field span {
+    font-family: 'Mukta';
+    font-weight: 580;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: rgb(80, 80, 80);
+}
+
+.comment_field #comment_content {
+    background-color: #eee;
+    width: 100%;
+    height: 110px;
+    resize: none;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 2px solid #eee;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Mukta';
+    font-weight: bold;
+}
+
+.comment_field #comment_content:focus {
+    background-color: white !important;
+    border: 2px solid #FF6000 !important;
+}
+
+.comment_field button {
+    background-color: #FF6000;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    padding: 13px;
+    width: 100%;
+    transition: 350ms ease;
+    margin-top: 15px;
+}
+
+.comment_field button:hover {
+    background-color: #e95b02;
+}
+
+.comment_field small {
+    font-size: 11px;
+    margin: 7px 0;
+}
+
+.comment_field small a {
+    color: #f05c00;
+    margin: 5px 2px;
+}
+
+.comment_field small a:hover {
+    text-decoration: none;
+}
+
+.close_side {
+    background-color: #F5F5F5;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: rgb(82, 82, 82);
+}
+
+.close_side img {
+    padding-bottom: 4px;
+}
+
+.Comment_topInfo {
+    width: 1140px !important;
+    position: relative;
+    height: 350px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.mkt-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    color: rgb(66, 65, 65);
+    padding-right: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mkt-title div {
+    width: 800px !important;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.mkt-cmtInfo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.mkt-cmtInfo .cmt-productImage {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin-right: 2rem;
+}
+
+.mkt-cmtInfo .cmt-productImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.noneEvualete {
+    width: 500px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noneEvualete h3 {
+    font-weight: 570;
+    font-size: 1.2rem;
+    font-family: 'Mukta';
+}
+
+.noneEvualete p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Mukta';
+}
+
+.mkt-cmtInfo .cmt-Star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mkt-cmtInfo .cmt-Star .averageStar {
+    font-size: 3.3rem;
+}
+
+.cmt-Star .top_star_average {
+    position: relative;
+}
+
+.checked {
+    color: #f5ab23;
+}
+
+.check {
+    color: #ffdd9e !important;
+}
+
+.black {
+    color: transparent;
+}
+
+.cmt-Star .top_star_average i {
+    font-size: 1.3rem;
+}
+
+.mkt_buttons {
+    height: 70px;
+    padding-top: 15px;
+}
+
+.mkt_buttons .evaluateBtn {
+    padding: 14px 23px;
+    background-color: #FF6000;
+    color: white;
+    outline: 0;
+    border: none;
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-left: 5px;
+    transition: 550ms ease;
+}
+
+.mkt_buttons .evaluateBtn i {
+    margin-right: 3px;
+}
+
+.evaluateBtn:hover {
+    background-color: #e45b05;
+}
+
+.mkt_buttons .sepetekleBtn {
+    background-color: #FFF2EB;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 35px;
+    color: #FF6000;
+    font-weight: bold;
+    transition: 250ms ease;
+    margin-left: 24px;
+}
+
+.sepetekleBtn:hover {
+    background-color: #fae0d3;
+}
+
+.mkt_infoOrder {
+    font-size: 1rem;
+    margin-top: 25px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.mkt_infoOrder i {
+    margin-right: 5px;
+}
+
+.Ratings_title_number {
+    font-weight: bold;
+    font-family: 'Mukta';
+    font-size: 1.1rem;
+}
+
+.Comment_emp {
+    width: 1140px !important;
+    height: auto;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.comment_wrap {
+    display: flex;
+    position: relative;
+    height: 280px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.figureRadio {
+    width: 100px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.figureRadio div {
+    background-color: #eee;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    color: rgb(65, 65, 65);
+    position: relative;
+}
+
+.figureRadio div img {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 24px;
+}
+
+.comment_w {
+    width: 100%;
+    height: 100%;
+}
+
+.comment_w .sec1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Mukta';
+    color: #919191;
+    font-size: 0.9rem;
+}
+
+.comment_w .sec1 .comment_ratings {
+    width: 120px;
+}
+
+.comment_w .sec1 .comment_date {
+    margin-right: 3px;
+}
+
+.comment_w .sec1 span {
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+.comment_w .sec2 {
+    position: relative;
+    width: 500px;
+    height: auto;
+    border-radius: 11px;
+    background-color: #eee;
+    margin-top: 14px;
+    font-size: 1rem;
+    padding: 1.4rem;
+    padding-bottom: 0.6rem;
+    position: relative;
+}
+
+.comment_w .sec2 .comment_content {
+    width: 100%;
+    height: auto;
+    font-family: 'Mukta';
+    font-size: 12px;
+    color: #484848;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.comment_w .sec2 .productSeller {
+    font-family: 'Mukta';
+    width: 100%;
+    height: auto;
+    font-size: 0.8rem;
+    display: flex;
+}
+
+.productSeller label {
+    color: rgb(146, 145, 145);
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+
+.productSeller label a {
+    color: #6C84FA;
+    margin: 0 2px;
+    font-weight: bold;
+}
+
+.productSeller label a:hover {
+    text-decoration: none;
+    color: #6C84FA;
+}
+
+.productSeller span {
+    margin: 0 10px;
+    color: rgb(189, 189, 189);
+}
+
+.productSeller div p {
+    display: inline;
+    margin-right: 6px;
+}
+
+.comment_w .sec3 {
+    width: 400px;
+    margin-top: 14px;
+}
+
+.comment_w .sec3 .isitusefulComment {
+    font-family: initial;
+    color: rgb(128, 127, 127);
+}
+
+.comment_w .sec3 .comment_rating_wrap {
+    display: flex;
+    margin-top: 14px;
+}
+
+.comment_rating_wrap div {
+    color: rgba(129, 129, 129, 0.7);
+    font-family: sans-serif;
+}
+
+.comment_rating_wrap div i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+.comment_rating_wrap div.comment_like {
+    margin-right: 25px;
+}
+
+.alert_dngrcmt {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    display: flex;
+    visibility: hidden;
+    justify-content: space-between;
+    border-radius: 9px;
+    padding: 1.2rem;
+    padding-left: 0.6rem;
+    z-index: 99999999;
+    width: 340px;
+    height: 210px;
+    border-left: 9px solid red;
+    background-color: rgb(252, 200, 200);
+}
+
+.alert_dngrcmt img {
+    width: 41px;
+    margin-top: 35px;
+    margin-right: 17px;
+}
+
+.alert_dngrcmt h6 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.alert_dngrcmt p {
+    font-size: 0.9rem;
+    margin-top: 12px;
+}
+
+.getcommentalert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    display: none;
+}
+
+.getcommentalert img {
+    width: 70px;
+}
+
+.getcommentalert h2 {
+    font-weight: bold;
+    font-family: 'Mukta';
+}
+
+.thank {
+    color: rgb(107, 107, 107);
+    font-size: 1rem;
+    font-family: initial;
+    padding-left: 10px;
+    margin-top: 27px;
+    height: 50px;
+}

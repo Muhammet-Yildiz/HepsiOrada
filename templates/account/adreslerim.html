@@ -1,0 +1,121 @@
+{% extends 'base.html' %}{%load crispy_forms_tags %} {% load static %} {% block script %}
+
+<script src="{% static 'js/addresses.js' %}"></script>
+
+
+
+{% endblock script %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'css/addresses.css'  %}"> {% endblock css %} {% block content %}
+
+
+<div class="Employee">
+
+
+
+    <h5>Teslimat Adreslerim </h5>
+
+    <div class="topInfo">
+        {{addresses|length}} teslimat adresiniz bulunmaktadır. Bu sayfadan yeni adres oluşturabilir, mevcut adreslerinizi düzenleyebilir ya da silebilirsiniz. <br> Bu sayfada yapacağınız adres değişiklikleri, daha önce vermiş olduğunuz siparişleri etkilemez.
+        Vermiş olduğunuz siparişin adres değişikliğini Siparişlerim alanından gerçekleştirebilirsiniz.
+
+    </div>
+
+
+    <div class="AddresWrap">
+
+        <div class="newAddAddres">
+
+            <div class="icon">
+                [
+                <b>
+               + 
+            </b> ]
+            </div>
+
+
+            <span>
+              <b>
+                Yeni teslimat adresi ekle 
+              </b>
+          </span>
+
+
+
+        </div>
+
+
+
+        {% for addres in addresses %}
+
+        <div class="address">
+            <b>
+                {{addres.title|truncatechars:28 }} 
+              </b>
+            <br><br>
+
+            <span class="name">
+                  {{addres.name}} {{addres.surname}}
+              </span>
+
+            <div class="Info">
+
+                {{addres.address|truncatechars:84}}
+            </div>
+
+            <div class="Info2">
+                {{addres.neighborhood}} / {{addres.state}} / {{addres.city|title}}
+
+            </div>
+            <span class="country">Türkiye</span>
+
+            <div class="buttons_emp">
+                <button class="delete" data-process="delete" data-id="{{addres.id}}">Sil </button>
+                <button class="edit" data-process="edit" data-id="{{addres.id}}">Düzenle </button>
+
+            </div>
+        </div>
+
+
+
+        {% endfor %}
+
+
+
+    </div>
+
+
+
+
+</div>
+<br><br>
+
+<div class="sideBar">
+
+    <div class="close_side">
+        <img src="https://img.icons8.com/windows/32/000000/multiply.png">
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+
+        <h3>Adres Ekle </h3>
+
+        <span>
+            <div>
+                01 Kişisel Bilgileriniz  
+            </div>
+        </span>
+
+
+        <h6>Teslim alacak kişinin bilgileri</h6>
+        {{form}}
+
+
+        <button type="submit" class="saveBtn" data-process="add">Adresi Kaydet </button>
+        <button type="button" class="giveupBtn">Vazgeç </button>
+
+    </form>
+
+</div>
+
+{% endblock content %}

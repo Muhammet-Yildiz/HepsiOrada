@@ -1,0 +1,130 @@
+.emp3 {
+    width: 100%;
+    height: 750px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3.3rem;
+}
+
+.form-head h4 {
+    font-weight: bold;
+    color: #FF6600;
+    font-family: 'Mukta';
+    font-size: 1.6rem;
+    padding-bottom: 0.7rem;
+}
+
+.form-head {
+    width: 100%;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 55%;
+    height: 100%;
+}
+
+.form_m {
+    position: relative;
+}
+
+.form_m input {
+    border: 2px solid rgb(187, 187, 187);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem !important;
+    padding: 0.8rem 1rem !important;
+}
+
+select {
+    border: 2px solid rgb(187, 187, 187) !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.form_m input:focus {
+    box-shadow: none !important;
+    border: 2px solid #FF6600;
+}
+
+.form_m small {
+    color: rgb(251, 111, 111);
+    visibility: visible;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 14px 0px 20px 10px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+
+.form_m div {
+    position: relative !important;
+    padding-top: 1rem;
+}
+
+.form_m div label {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 85 !important;
+    background-color: white;
+    font-weight: bold;
+    color: #ccc;
+    padding: 3px 5px;
+    transition: 450ms ease;
+}
+
+#div_id_username,
+#div_id_email,
+#div_id_phone {
+    position: relative;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+#div_id_username i,
+#div_id_email i,
+#div_id_phone i {
+    color: red;
+    position: absolute;
+    right: 15px;
+    top: 46px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+#div_id_email input {
+    background-color: white !important;
+}
+
+.form_m button {
+    width: 100%;
+    background-color: #FF6000;
+    border: none;
+    padding: 16px 21px !important;
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+    transition: 350ms ease;
+    border-radius: 12px;
+    outline: 0;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.form_m button:focus {
+    background-color: #cf5508 !important;
+    outline: 0;
+}
+
+.form_m button:hover {
+    background-color: #cf5508 !important;
+}
+
+#id_gender {
+    box-shadow: none !important;
+    height: 50px;
+}

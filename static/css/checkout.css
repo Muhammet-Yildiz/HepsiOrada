@@ -1,0 +1,574 @@
+#employee {
+    width: 1120px;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#employee section {
+    position: relative;
+}
+
+#employee section:first-child {
+    width: 860px;
+}
+
+.AddressEmp {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.AddressEmp h4 {
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-bottom: 1.1rem;
+}
+
+.AddressEmp .addAddressLink {
+    color: #f55f01;
+    font-family: 'Mukta';
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addAddressLink span {
+    margin-left: -5px;
+    color: #f55f01;
+    padding-top: 1px;
+    opacity: 0.8;
+    font-weight: 610;
+    font-family: 'Mukta';
+}
+
+.noaddressEmp {
+    border: dashed #FF6000 1px;
+    background-color: #fcf5f1;
+    width: 224px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+
+.noaddressEmp svg {
+    margin-right: 7px;
+}
+
+.addresWrap {
+    display: flex;
+    margin-top: 8px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.addresWrap .addres {
+    width: 224px;
+    padding: 20px;
+    height: 180px;
+    border-radius: 6px;
+    padding-top: 2.5rem;
+    height: 185px;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    border: rgba(204, 204, 204, 0.8) solid 1px;
+}
+
+.addres svg {
+    position: absolute;
+    top: -4px;
+    width: 36px;
+    height: 36px;
+    left: -4px;
+    display: none;
+}
+
+.checked {
+    border: #6C84FA solid 5px !important;
+}
+
+.addres b {
+    font-family: 'Mukta';
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: rgb(87, 87, 87);
+}
+
+.addres div {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 6px;
+    line-height: 19px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 6px;
+    font-weight: 580;
+}
+
+.addres span {
+    font-family: 'Mukta';
+    font-size: 0.9rem;
+    color: rgb(80, 80, 80);
+}
+
+.OrderSummaryEmp {
+    position: relative;
+}
+
+.OrderSummaryEmp h4 {
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-bottom: 1.1rem;
+}
+
+.item_wrapper {
+    position: relative;
+}
+
+.item_wrapper #item {
+    border: rgb(212, 212, 212) solid 1px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding-bottom: 6px;
+}
+
+#item .pro2fssc {
+    display: flex;
+}
+
+.item_seller {
+    border-radius: 0;
+    background-color: #f0f0f0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px;
+    font-family: 'Mukta';
+    margin-bottom: 19px;
+    font-size: 14px;
+}
+
+#item .sec1 {
+    margin-right: 5px;
+    display: flex;
+    width: 540px;
+    position: relative;
+}
+
+.sec1 .item_quantity {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f55f01;
+    color: white;
+    font-family: 'Mukta';
+    font-weight: bold;
+    width: 25px;
+    font-size: 0.7rem;
+    height: 25px;
+}
+
+.sec1 .item_img {
+    border: rgb(214, 214, 214) solid 1px;
+    margin-right: 1rem;
+    padding: 12px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    border-radius: 9px;
+}
+
+.item_img img {
+    width: 60px;
+    height: 60px;
+}
+
+.sec1 .item_info {
+    position: relative;
+}
+
+.sec1 .item_info .item_title {
+    font-size: 0.9rem;
+    font-family: 'Mukta';
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(77, 77, 77);
+}
+
+.sec1 .item_info .scfr5 {
+    display: flex;
+}
+
+.scfr5 .chooseSize,
+.chooseColor,
+.scfr5 b {
+    font-weight: bold;
+    color: #6C84FA;
+    font-family: 'Mukta';
+    margin-right: 7px;
+    font-size: 0.9rem;
+    padding-top: 4px;
+}
+
+.scfr5 .s_m676 {
+    font-family: 'Mukta';
+    font-size: 0.8rem;
+    padding-top: 4px;
+    margin-top: 1px;
+    margin-left: 12px;
+}
+
+.s_m676 a {
+    color: #439E4A!important;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: underline !important;
+}
+
+.chooseColor {
+    margin-right: 25px;
+}
+
+#item .sec2 {
+    width: 340px;
+    border-radius: 9px;
+    display: flex;
+    height: 69px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #eee;
+}
+
+.sec2 .piece_one {
+    display: flex;
+    width: 200px;
+}
+
+.piece_one div h5 {
+    font-family: 'Mukta';
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.piece_one div p {
+    font-size: 0.8rem;
+}
+
+.piece_one div p a {
+    color: #439E4A!important;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: underline !important;
+}
+
+.cargoXs {
+    font-size: 0.8rem;
+    width: 110px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: rgb(116, 116, 116);
+}
+
+.payed_prices_Emp {
+    border: rgb(199, 199, 199) solid 1px;
+    width: 247px !important;
+    padding: 25px;
+    font-family: 'Mukta';
+    border-radius: 8px;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.payed_prices_Emp h4 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(78, 78, 78);
+    margin-bottom: 13px;
+}
+
+.payed_prices_Emp .item_total {
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    font-size: 1.7rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.item_total small {
+    font-weight: bold;
+}
+
+.contractCheck {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contractCheck input {
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+}
+
+.contractCheck div {
+    font-size: 0.8rem;
+}
+
+.contractCheck div a {
+    color: #FF6000;
+    font-weight: 580;
+}
+
+.payed_prices_Emp button.orderConfirmBtn {
+    padding: 12px 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    border-radius: 8px;
+}
+
+.payed_prices_Emp p {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color: rgb(102, 102, 102);
+}
+
+.payed_prices_Emp ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.payed_prices_Emp ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.payed_prices_Emp ul li span {
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+.payed_prices_Emp li div s {
+    opacity: 0.7;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 5px;
+}
+
+.payed_prices_Emp li b,
+li b small {
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+.search-form form,
+#hesabım,
+#favorilerim,
+#sepetim {
+    display: none;
+}
+
+.emp-header {
+    position: absolute !important;
+    top: 0;
+}
+
+.emp-header .container {
+    margin: 0 !important;
+    padding: 0 50px !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    .emp-header .container {
+        max-width: 2140px;
+    }
+}
+
+.secwraptop p {
+    background-color: rgb(236, 236, 236);
+    position: relative;
+    width: 100px;
+    height: 2px;
+    margin: 0 5px;
+    margin-top: 17px;
+}
+
+.bread_crumb_1ugPk {
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1250px) {
+    .bread_crumb_1ugPk {
+        width: 98%;
+    }
+}
+
+.bread_crumb_1ugPk div.stepOne,
+div.stepTwo {
+    background-color: #6C84FA;
+    padding: 6px 19px;
+    margin-right: 10px;
+    border-radius: 15px;
+    color: white;
+    height: 37px;
+    font-family: 'Mukta';
+}
+
+.stepTwo {
+    margin-left: 1.8rem;
+}
+
+.stepThree {
+    position: relative;
+    color: #6C84FA;
+    margin-right: 10px;
+    height: 37px;
+    margin-left: 1rem;
+    border-radius: 15px;
+    border: #6C84FA solid 2px;
+    font-family: 'Mukta';
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.stepThree span {
+    position: relative;
+    padding: 0 10px;
+}
+
+.stepThree div {
+    position: absolute;
+    bottom: -6px;
+    left: 60px;
+    z-index: 99;
+    width: 10px;
+    transform: rotate(45deg);
+    height: 10px;
+    background-color: white;
+    border: #6C84FA solid 2px;
+    border-top: none;
+    border-left: none;
+}
+
+.bread_crumb_1ugPk .secwraptop {
+    display: flex;
+}
+
+.userftg {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(107, 107, 107);
+    font-family: 'Mukta';
+    border-radius: 50%;
+    padding: 16px;
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.Payment_Area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -99;
+    opacity: 0.2;
+}
+
+.Payment_Area h4 {
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-bottom: 1.6rem;
+}
+
+#paypal-container-btn {
+    padding-left: 50px !important;
+}
+
+#make-payment {
+    padding: 15px;
+    background-color: #FF6000;
+    color: white;
+    font-family: 'Mukta';
+    font-weight: bold;
+    border: none;
+    width: 750px;
+    margin: 0 3rem;
+    transition: 350ms ease;
+    border-radius: 5px;
+}
+
+#make-payment:hover {
+    background-color: #e75a02;
+}
+
+.payment_received {
+    background-color: rgb(225, 250, 225);
+    width: 750px;
+    height: 350px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment_received p {
+    color: green;
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.payment_received img {
+    margin-right: 10px;
+}
+
+.payment_received span {
+    color: black;
+    font-family: 'Mukta';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.uyarı {
+    font-weight: bold;
+    opacity: 0.7;
+}

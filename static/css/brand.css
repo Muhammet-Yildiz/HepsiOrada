@@ -1,0 +1,56 @@
+.Brands-emp {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+}
+
+.brand-item {
+    border: 2px solid rgba(224, 224, 224, 0.6);
+    width: 205px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 250ms ease;
+    padding: 10px;
+    margin: 15px 6px;
+    border-radius: 6px;
+}
+
+.top_title {
+    font-size: 1rem;
+    color: rgb(255, 96, 0);
+    font-weight: bold;
+    display: block;
+    margin-top: -45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.brand-item:hover {
+    box-shadow: none;
+    border: 2px solid rgb(255, 96, 0);
+}
+
+.brand-item img {
+    width: 150px;
+    height: 100px;
+}
+
+.img_link {
+    margin: 0 auto;
+}
+
+.brand-title {
+    text-align: center;
+    color: #484848;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.brand-title:hover {
+    color: #484848;
+    text-decoration: none;
+}

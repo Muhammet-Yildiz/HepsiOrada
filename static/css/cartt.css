@@ -1,0 +1,588 @@
+.employee {
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .sepet-emp {
+        width: 100%;
+        height: auto;
+    }
+    .total-emp {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 88888888888888888888;
+        background-color: white;
+        box-shadow: 5px 0 10px rgba(184, 182, 182, 0.4);
+    }
+    .total-emp table {
+        display: none;
+    }
+    .total-emp h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+        margin-top: 10px;
+    }
+    .total-emp h3 .total-text {
+        font-size: 0.8rem;
+        opacity: 0.8;
+        margin-bottom: 8px;
+    }
+    .total-emp h3 span {
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .total-emp a {
+        background-color: #FF6600;
+        color: white;
+        width: 180px;
+        margin: 10px;
+        height: 50px;
+        font-family: sans-serif;
+        border-radius: 9px;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .sepet-emp {
+        width: 70%;
+        height: auto;
+    }
+    .total-emp {
+        border: 1px solid rgb(224, 224, 224);
+        margin-top: 1.7rem;
+        width: 250px;
+        margin-left: 15px;
+        height: 320px;
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        border-radius: 6px;
+    }
+    .total-emp span {
+        font-family: 'Roboto';
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .total-emp .total-text {
+        margin-top: -5px !important;
+        margin-bottom: 18px;
+        font-family: 'Roboto';
+        font-weight: 550;
+        display: block;
+    }
+    .total-emp h3 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        font-family: 'Mukta';
+        margin-top: 10px;
+    }
+    .total-emp .total_m {
+        font-size: 1.4rem;
+    }
+    .total-emp .total-text {
+        font-size: 1rem !important;
+    }
+    .total-emp h3 small {
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    .total-emp a {
+        background-color: #FF6600;
+        padding: 1rem;
+        color: white;
+        font-family: sans-serif;
+        border-radius: 9px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .total-emp table {
+        margin-top: 1.6rem;
+        font-size: 0.8rem;
+        width: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .total-emp table tr {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px;
+        align-items: center;
+    }
+}
+
+.sepet-nav {
+    display: flex;
+}
+
+.sepet-nav h4 {
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+
+.sepet-nav span {
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    letter-spacing: 0.1px;
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.product-emp {
+    border-bottom: 1px rgba(223, 222, 222, 0.5) solid;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    position: relative;
+    margin: 25px 0;
+    transition: 350ms ease !important;
+}
+
+.product-emp:hover .removeAll {
+    opacity: 1;
+    transition: 350ms ease !important;
+}
+
+.product-emp .product-img {
+    width: 150px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: 1.6rem;
+}
+
+.product-emp .product-img img {
+    width: 100%;
+    height: 65%;
+}
+
+.product-emp .product-sec {
+    width: 100%;
+    position: relative;
+}
+
+.partc {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .partc {
+        display: flex;
+        flex-direction: column;
+    }
+    .kargo {
+        display: block;
+        margin-bottom: -2px;
+    }
+    .product-choose {
+        text-align: start !important;
+    }
+}
+
+.product-emp .product-sec .product-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.product-brand {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(161, 161, 161);
+}
+
+.product-brand a {
+    color: #FF6600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    margin-right: 22px;
+}
+
+.kargo {
+    font-size: 0.8rem;
+    color: rgb(138, 136, 136);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-price {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    color: #FF6600;
+}
+
+.product-price small {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.product-quantity {
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.product-quantity i {
+    color: #FF6600;
+    border: 2px solid rgba(184, 182, 182, 0.4);
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.removeAll {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 75px;
+    right: 95px;
+    transition: 350ms ease !important;
+    width: 45px;
+    height: 95px;
+    opacity: 0;
+}
+
+.removeAll span {
+    font-family: 'Mukta';
+    color: rgb(77, 77, 77);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.removeAll svg {
+    width: 45px !important;
+    height: 45px;
+    font-weight: bold;
+    padding: 7px;
+    transition: 500ms ease;
+    border-radius: 50%;
+}
+
+.removeAll svg:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.product_options {
+    margin-top: 10px;
+    color: #439E4A;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.shopping-none {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    height: 250px;
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+.shopping-none i {
+    font-size: 2.3rem;
+    color: #fd6805;
+}
+
+.shopping-none h3 {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.shopping-none span {
+    text-align: center;
+    margin: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: -0.032rem;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div svg {
+    width: 85px !important;
+    height: 55px;
+}
+
+.lastview-Emp4 {
+    padding: 0 1rem;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.slicky-slider4 {
+    width: 100%;
+    height: 340px;
+}
+
+.arrow-prev4,
+.arrow-next4 {
+    position: absolute;
+    font-size: 2rem;
+    z-index: 99;
+    border-radius: 50%;
+}
+
+.arrow-prev4 {
+    top: 100px;
+    left: -35px;
+    display: none !important;
+}
+
+.arrow-next4 {
+    top: 125px;
+    right: -15px;
+}
+
+.arrow-next4 i {
+    font-size: 1.5rem;
+    color: rgba(124, 124, 124, 0.5);
+    border-radius: 50%;
+    padding: 5px 7px;
+    z-index: 102;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 24%);
+}
+
+.product-item4 {
+    height: 320px !important;
+    padding: 0.6rem;
+    outline: 0;
+}
+
+.product-item4:hover .product-img img {
+    transform: scale(1.1);
+}
+
+.product-item4 .product-img {
+    border: rgba(161, 161, 161, 0.3) solid 1px;
+    width: 100%;
+    height: 193px;
+    position: relative;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.product-item4 .product-img img {
+    width: 100%;
+    height: 100%;
+    transition: 550ms ease;
+}
+
+.product-item4 .product-price-emp {
+    padding-left: 9px;
+    padding-top: 12px;
+}
+
+.product-item4 .product-price-emp h5 {
+    font-weight: 590;
+    font-family: sans-serif;
+    color: rgb(70, 70, 70);
+    font-size: 17px;
+}
+
+.product-item4 .product-price-emp small {
+    margin-left: 0.1rem;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+.product-item4 .product-price-emp h6 {
+    opacity: 0.4;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.product-item4 .product-title {
+    font-size: 11px;
+    padding-left: 5px;
+    width: 100%;
+    line-height: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.product-item4 .product-title a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+}
+
+.user_hearts_emp {
+    width: 100%;
+    position: relative;
+    height: 350px;
+}
+
+.product_wrap {
+    height: 340px;
+}
+
+.product_p {
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    width: auto;
+    height: 320px !important;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    padding-top: 0;
+    position: relative;
+    outline: 0 !important;
+}
+
+.product_p:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.product_p .product_title {
+    width: 100%;
+    height: 48px;
+    padding-top: 7px;
+    overflow: hidden;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product_p .product_img {
+    width: 100%;
+    height: 150px;
+}
+
+.product_p .product_img img {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.product_p small {
+    font-weight: bolder;
+}
+
+.product_price {
+    text-align: center;
+    color: #FF6600;
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+
+.product_p .product_oldprice {
+    text-align: center;
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+.arrow-prev5 {
+    position: absolute;
+    left: -30px;
+    top: 120px;
+    z-index: 99;
+}
+
+.arrow-next5 {
+    position: absolute;
+    right: -30px;
+    top: 120px;
+    z-index: 99;
+}
+
+.arrow-next5 i,
+.arrow-prev5 i {
+    font-size: 1.5rem;
+    color: rgba(124, 124, 124, 0.5);
+    border-radius: 50%;
+    padding: 5px 7px;
+    z-index: 102;
+    z-index: 95;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 24%);
+}
+
+.add-btn {
+    background-color: #fae8db;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 0;
+    width: 70%;
+    transition: 350ms ease;
+    color: #FF6600;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    z-index: 101;
+    left: 5%;
+    bottom: 35px;
+    display: none;
+}
+
+.add-btn:hover {
+    background-color: #ffe0cb;
+}
+
+.product_p:hover .add-btn {
+    display: inline-block;
+}
+
+.product-choose {
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    color: #6c84fa;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.product-choose span label {
+    color: #FF6600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.chooseColor {
+    margin-top: -4px;
+}

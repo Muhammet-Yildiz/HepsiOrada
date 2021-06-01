@@ -1,0 +1,475 @@
+body {
+    position: relative;
+}
+
+.title_t {
+    font-weight: bold;
+}
+
+.Employee {
+    padding: 10px;
+    height: auto;
+}
+
+.order_emp {
+    border: 1px solid rgb(214, 214, 214);
+    margin-bottom: 5rem;
+    height: auto;
+    padding: 6px;
+    padding-left: 16px;
+    box-shadow: 0 1px 4px 1px rgb(233, 233, 233);
+}
+
+.month-title {
+    padding: 20px;
+    background: #fdece2;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.month-title h3 {
+    color: rgb(219, 108, 4);
+    font-size: 1.2rem;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.order_top {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 0.4rem;
+    padding-top: 10px;
+}
+
+.sec-1 {
+    width: 320px;
+    height: 100%;
+    display: flex;
+}
+
+.sec-2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-right: 15px;
+    position: relative;
+}
+
+.order_top i.fa-chevron-down {
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    background-color: #eee;
+    width: 30px;
+    padding: 8px;
+    height: 30px;
+    border-radius: 50%;
+    color: gray;
+    display: block;
+}
+
+.order_top i.fa-times {
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    background-color: #eee;
+    width: 30px;
+    padding: 8px;
+    height: 30px;
+    border-radius: 50%;
+    color: rgb(99, 99, 99);
+    /* display: none; */
+}
+
+.order_top .order_imgs {
+    width: 120px;
+    padding-left: 25px;
+}
+
+.order_top .order_imgs img {
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    padding: 2px;
+}
+
+.order_top .order_date_transaction {
+    width: 185px;
+}
+
+.order_date_transaction .order_transaction span {
+    font-size: 0.8rem;
+    color: #919191;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.order_date_transaction .order_date {
+    margin-top: 8px;
+    color: #919191;
+    font-size: 0.8rem;
+}
+
+.order_top .order_loading {
+    position: relative;
+    width: 70%;
+    padding-right: 5rem;
+}
+
+.order_loading span {
+    color: rgb(53, 53, 53);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.order_loading .load {
+    background-color: #919191;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.order_top .order_payment {
+    width: 100px;
+}
+
+.order_payment .order_total,
+.order_total small {
+    font-weight: bold;
+    color: rgb(2, 175, 2);
+    letter-spacing: 0.8px;
+    font-size: 15px;
+}
+
+.order_payment span {
+    font-size: 0.8rem;
+    color: rgb(100, 100, 100);
+}
+
+.order_bottom {
+    display: none;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.order_bottom .product_emp {
+    position: relative;
+}
+
+.product_emp .order_product {
+    border: rgba(230, 230, 230, 0.8) solid 1px;
+    display: flex;
+    border-radius: 6px;
+    height: 215px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.order_product .product_img {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.product_img .item_quantity {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    background-color: #FF6000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    font-family: 'Mukta';
+}
+
+.product_img img {
+    width: 80px;
+}
+
+.order_product .product_info {
+    width: 450px;
+    padding-left: 6px;
+}
+
+.product_info .product_title {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product_info .product_title a {
+    text-decoration: none;
+    color: black;
+    color: #484848;
+}
+
+.product_info .product_seller {
+    position: relative;
+}
+
+.product_seller {
+    display: flex;
+    align-items: center;
+}
+
+.product_seller span {
+    font-size: 12px;
+    color: #484848;
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+}
+
+.product_seller a {
+    color: blue;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500 !important;
+    margin-right: 3rem;
+}
+
+.product_info .product_price,
+.product_price span,
+.product_price small {
+    margin-top: 6px;
+    font-weight: 540;
+    color: #439e4a;
+}
+
+.product_info button {
+    background-color: #FF6000;
+    border: none;
+    outline: 0;
+    color: white;
+    font-size: 12px;
+    height: 32px;
+    width: 88px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.product_info button:hover {
+    background-color: #FF6000 !important;
+}
+
+.product_info button i {
+    margin-right: 4px;
+}
+
+.product_info .evaluateBtn {
+    position: relative;
+}
+
+.evaluateBtn:hover {
+    background-color: white !important;
+}
+
+.evaluateBtn i {
+    color: #FF6000;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.evaluateBtn span {
+    color: rgb(117, 117, 117);
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.addrspymnt {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+}
+
+.addrspymnt .order_address {
+    position: relative;
+}
+
+.order_address h6,
+.payment_info h6 {
+    color: #484848;
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.addrspymnt .payment_info {
+    margin-top: 10px;
+}
+
+.order_address .delivery_address,
+.billing_address {
+    height: 120px;
+}
+
+.order_address .delivery_address h6,
+.billing_address h6 {
+    color: #484848;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.32px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.delivery_address div,
+.billing_address div {
+    position: relative;
+}
+
+.delivery_address div span,
+.billing_address div span {
+    height: auto;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #484848;
+}
+
+.delivery_address span,
+.billing_address span {
+    position: relative;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #484848;
+}
+
+.delivery_address b,
+.billing_address b {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.payment_info {
+    position: relative;
+}
+
+.payment_info .cargo,
+.payment_info .net_total {
+    border-bottom: rgba(192, 192, 192, 0.2) solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    align-items: center;
+}
+
+.cargo span,
+.net_total span {
+    width: 50%;
+    color: #696969;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cargo span:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.net_total {
+    margin-top: 20px;
+}
+
+.net_total h6 {
+    color: #696969;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 22px;
+}
+
+.net_total h6 small {
+    font-weight: bold;
+}
+
+.notorderEmp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notorderEmp h4 {
+    width: 500px;
+    text-align: center;
+    font-family: 'Mukta';
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: rgb(87, 87, 87);
+    font-size: 1.3rem;
+}
+
+.notorderEmp p {
+    letter-spacing: 0.6px;
+    margin: 15px 0;
+    color: #616060;
+}
+
+.notorderEmp a {
+    background-color: #FF6000;
+    padding: 13px 39px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: 350ms ease;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.notorderEmp a:hover {
+    text-decoration: none;
+    background-color: #eb5a00;
+    color: white;
+}
+
+.notorderEmp img {
+    margin-bottom: 1.4rem;
+    margin-top: -10px;
+}
+
+.top_title h4 {
+    color: rgb(255, 96, 0);
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: -4.6rem;
+    margin-bottom: 3rem;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.chooseEmp {
+    display: flex;
+    width: 150px;
+    height: auto;
+    color: rgb(236, 13, 13);
+    font-family: 'Mukta';
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.chooseEmp span {
+    margin: 0 10px;
+    color: rgb(236, 13, 13);
+    width: auto !important;
+}

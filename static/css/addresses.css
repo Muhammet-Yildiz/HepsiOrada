@@ -1,0 +1,324 @@
+.Employee {
+    margin-top: -4.5rem;
+    width: 1170px !important;
+    height: 1000px;
+    position: relative;
+}
+
+.Employee h5 {
+    color: #f05d02;
+    font-family: 'Mukta';
+    font-size: 21px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.Employee .topInfo {
+    width: 1140px !important;
+    font-family: 'Mukta';
+    letter-spacing: 0.6px;
+    color: rgb(99, 99, 99);
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.AddresWrap {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newAddAddres {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    width: 260px;
+    margin: 0 20px 20px 0;
+    height: 355px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newAddAddres .icon {
+    font-size: 1.8rem;
+    height: 50px;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    font-family: 'Mukta';
+}
+
+.newAddAddres span b {
+    font-family: 'Mukta';
+    font-size: 1.1rem;
+}
+
+.icon b {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.address {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    width: 260px;
+    height: 355px;
+    margin: 0 20px 20px 0;
+    padding: 1.3rem;
+    position: relative;
+}
+
+.address b {
+    font-family: 'Mukta';
+    font-size: 1.1rem;
+}
+
+.address .name {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(134, 134, 134);
+    display: block;
+    margin-top: -7px !important;
+}
+
+.address .Info {
+    margin-top: 21px;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: rgb(121, 121, 121);
+    height: 75px;
+}
+
+.address .Info2 {
+    font-family: 'Mukta';
+    font-size: 0.8rem;
+    color: rgb(114, 114, 114);
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.country {
+    font-family: 'Mukta';
+    font-size: 0.9rem;
+    color: rgb(136, 136, 136);
+}
+
+.address .buttons_emp {
+    display: block;
+    margin-top: 4px;
+    position: absolute;
+    bottom: 12px;
+    padding: 10px 0;
+    width: 200px;
+}
+
+.buttons_emp .edit {
+    background-color: #FF6000;
+    padding: 9px 18px;
+    outline: 0;
+    font-family: 'Mukta';
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    border: none;
+    color: white;
+    transition: 350ms ease;
+    font-weight: bold;
+}
+
+.edit:hover {
+    background-color: #e75a02;
+}
+
+.buttons_emp .delete {
+    padding: 8px 20px;
+    outline: 0;
+    font-family: 'Mukta';
+    background-color: rgb(245, 244, 244);
+    border-radius: 4px;
+    margin-left: 10px;
+    color: rgb(99, 99, 99);
+    font-size: 0.8rem;
+    border: 1px solid rgb(114, 114, 114);
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: 350ms ease;
+}
+
+.delete:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.asteriskField {
+    display: none;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: -540px;
+    padding-top: 5.8rem;
+    padding-left: 5.8rem;
+    padding-right: 4rem;
+    z-index: 9999999;
+    background-color: white;
+    transition: 450ms ease !important;
+}
+
+.errorlist {
+    display: none !important;
+}
+
+.sideBar::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+.sideBar form textarea {
+    height: 145px;
+    resize: none;
+}
+
+.sideBar form label {
+    margin-top: 10px;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 6px;
+}
+
+.sideBar form input,
+.sideBar form textarea {
+    padding: 12px 21px;
+    border-radius: 12px;
+    background-color: #eee;
+    border: 2px solid #eee;
+    transition: 175ms ease;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 9px;
+}
+
+.sideBar form input:hover,
+.sideBar form textarea:hover {
+    background-color: rgba(238, 238, 238, 0.4) !important;
+    border: 2px solid #eee;
+}
+
+.sideBar form input:focus,
+.sideBar form textarea:focus {
+    border: 2px solid #FF6000 !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+.sideBar form .saveBtn {
+    width: 150px !important;
+    height: 55px;
+    background-color: #FF6000;
+    border: none;
+    color: white;
+    font-weight: 550;
+    font-size: 1rem;
+    transition: 350ms ease;
+    border-radius: 7px;
+    outline: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 15px;
+}
+
+.sideBar form .saveBtn:focus {
+    background-color: #cf5508 !important;
+    outline: 0;
+}
+
+.sideBar form .saveBtn:hover {
+    background-color: #cf5508 !important;
+}
+
+.sideBar form .giveupBtn {
+    width: 150px !important;
+    height: 55px;
+    border: none;
+    color: rgb(141, 140, 140);
+    font-weight: 550;
+    font-size: 1rem;
+    transition: 350ms ease;
+    border-radius: 7px;
+    font-weight: bold;
+    outline: 0;
+    background-color: rgba(224, 223, 223, 0.2);
+    border: 1px solid rgb(175, 175, 175);
+    margin-top: 2rem;
+}
+
+#id_name {
+    width: 46% !important;
+    display: inline;
+    margin-right: 5%;
+}
+
+#id_surname {
+    width: 46% !important;
+    display: inline;
+}
+
+.close_side {
+    background-color: #F5F5F5;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    left: 20px;
+    color: rgb(82, 82, 82);
+}
+
+.close_side img {
+    padding-bottom: 4px;
+}
+
+form h3 {
+    font-family: 'Mukta';
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+form span {
+    color: #6c84fa;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    position: relative;
+    height: 35px;
+    display: block;
+    border-top: rgba(211, 210, 210, 0.4) solid 1px;
+}
+
+form span:last-child {
+    margin-top: 35px;
+    margin-bottom: 12px !important;
+}
+
+form span div {
+    position: absolute;
+    top: -14px;
+    width: 185px;
+    background-color: white !important;
+}
+
+form h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 450;
+}

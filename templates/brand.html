@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% load static %} {% block title %} Markalar {% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/brand.css'   %}"> {% endblock css %} {% block content %}
+
+<h3 class="top_title" style="font-family: 'RocknRoll One', sans-serif;">Markalar </h3>
+
+
+<div class="Brands-emp">
+
+
+    {% for brand in Brands %}
+    <a href="/brand-product-list/{{brand.slug}}">
+
+        <div class="brand-item">
+
+            {% if brand.image %}
+            <a href="/brand-product-list/{{brand.slug}}" class="img_link">
+
+                <img src="{{brand.image.url}}" alt="{{brand.image}}">
+            </a>
+
+            {% endif %}
+        </div>
+    </a>
+
+
+    {% endfor %}
+
+</div>
+
+
+
+
+
+{% endblock content %}

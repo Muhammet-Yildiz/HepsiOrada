@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% load static %} {% block script %}
+<script>
+    $(function() {
+
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.4"
+        }, 400)
+    })
+</script>
+<script src="/static/js/carta.js"></script>
+{% endblock script %} {% block title %} Category product sayfası {% endblock title %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'css/index.css'   %}"> {% endblock css %} {% block content %} {% include "includes/addproductalert.html" %} {% if not request.user.is_authenticated %}
+
+<br><br><br> {% endif %}
+<small class="path"><a href="/">Anasayfa</a> <b> > </b>  <a href="/Categories/">Kategoriler</a>    <b> > </b>  <span>{{cat_title }} </span> </small>
+<hr>
+
+<br><br>
+
+
+<div class="Employee">
+
+
+    <br><br> {% include "includes/transition.html" %}
+
+    <div class="products-emp">
+        {% if data %} {% for product in data %}
+        <div class="product-item">
+            <div class="product-title">
+                <a href="product/{{product.slug}}"> 
+                    {{product.title}}
+                </a>
+            </div>
+            <div class="product-img">
+                <a href="/product/{{product.slug}}">
+                    <img src="{{product.image.url}}" alt="{{ product.image}} ">
+                </a>
+            </div>
+
+            <div class="product-price-emp">
+                <div class="product-price">
+                    <span class="price_1">
+                        {{product.price|floatformat:2}} <small>TL</small>
+                    </span>
+                    <span class="price_2"> 
+                        <small> 
+                            
+                            {{product.oldprice|floatformat:2}}
+                            TL</small>
+                    </span>
+                </div>
+            </div>
+
+            <button data-action="add" data-product="{{product.id}}" class="ml-3  update-cart"> <i class="fas fa-shopping-cart "></i> Sepete Ekle</button>
+        </div>
+
+        {% endfor %} {% else %}
+        <div class="alert alert-info "> İlgili bir ürün bulunamadı </div>
+        {% endif %}
+    </div>
+
+
+
+
+</div>
+{% endblock content %}

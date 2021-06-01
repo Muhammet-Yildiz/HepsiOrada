@@ -1,0 +1,103 @@
+.Employee {
+    position: relative;
+    height: 650px;
+}
+
+.title_f {
+    border: 1px solid rgb(235, 235, 235);
+    padding: 22px 25px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.title_f span {
+    color: #FF6600;
+    font-family: 'Mukta';
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.title_f a {
+    text-decoration: underline;
+    color: rgb(70, 70, 70);
+    font-size: 0.8rem;
+    padding-top: 1px;
+}
+
+.Employee ul {
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 6px;
+    list-style-type: none;
+    padding: 22px 25px;
+}
+
+.Employee ul li {
+    border-bottom: 1px solid rgb(248, 246, 246);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.Employee ul li span {
+    color: #333;
+    font-family: 'Mukta';
+    font-weight: bold;
+}
+
+.Employee ul li div {
+    width: 222px;
+    color: rgb(128, 128, 128);
+}
+
+.options_btn {
+    display: flex;
+    padding: 25px 0;
+    justify-content: flex-start;
+}
+
+.options_btn .update_userInfoBtn {
+    width: 155px;
+    border: 1px solid #FF6600;
+    color: #FF6600;
+    border-radius: 3px;
+    background-color: white;
+    height: 45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta';
+    margin-left: 3rem;
+    font-size: 0.9rem;
+    transition: 350ms ease;
+}
+
+.update_userInfoBtn:hover {
+    background-color: #f8f8f8;
+}
+
+.changepassword_a {
+    margin-left: 22px;
+    width: 155px;
+    border: 1px solid #FF6600;
+    background-color: #FF6600;
+    border-radius: 3px;
+    color: white;
+    height: 45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta';
+    transition: 450ms ease;
+    font-size: 0.9rem;
+}
+
+.changepassword_a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #e75d01;
+}
