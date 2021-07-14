@@ -9,33 +9,14 @@
 {% endblock script %} {% block css %}
 
 <link rel="stylesheet" href="{% static 'css/index.css'   %}">
-<link rel="stylesheet" href="{% static 'css/indexfilter.css'   %}"> {% endblock css %} {% block content %} {% include "includes/addproductalert.html" %} {%load crispy_forms_tags %} {% if request.user.username %}
-
-
-<h6 style="color: red ;">
-    Şuan aktıf olan kullanıcı : {{request.user.username}}
-</h6>
-{% endif %}
-
-
-
-
-<div style="border: red solid 4px ; width:100%;height: 950px  ; display : none  ">
-    <form method="GET" class="filter_form">
-        {{ myFilter.form|crispy}}
-
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-
-
-
-</div>
+<link rel="stylesheet" href="{% static 'css/indexfilter.css'   %}"> {% endblock css %} {% block content %} {% include "includes/addproductalert.html" %} {%load crispy_forms_tags %}
 
 
 
 
 
 
+<br><br><br>
 
 <h5 class="title_b">
     Süper Fiyat, Süper Teklif
