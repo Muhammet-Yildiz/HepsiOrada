@@ -1,0 +1,182 @@
+{% extends "base.html" %} {% load static %} {% block script %}
+<script>
+    $(function() {
+
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.3"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.5"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.7"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.1"
+        }, 400)
+        $(".transition-effect").animate({
+            opacity: "0.4"
+        }, 400)
+    })
+</script>
+
+<script src="{% static 'js/carta.js'   %}"></script>
+{% endblock script %} {% block title %} Category product sayfası {% endblock title %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'css/index.css'   %}">
+<link rel="stylesheet" href="{% static 'css/cartt.css'   %}">
+<link rel="stylesheet" href="{% static 'css/detail.css'   %}"> {% endblock css %} {% block content %} {% if not request.user.is_authenticated %}
+<br><br><br> {% endif %}
+
+<small class="path"><a href="/">Anasayfa</a>   <b> <i class="fas fa-chevron-right"></i> </b>    <a href="/Brands/">Markalar</a>   <b> <i class="fas fa-chevron-right"></i> </b>  <span>{{brand_title }} </span> </small>
+<hr>
+<br>
+
+<div class="Employee">
+
+    <br><br> {% include "includes/transition.html" %} {% include "includes/addproductalert.html" %}
+    <div class="products-emp">
+        {% if data %} {% for product in data %}
+        <div class="product-item">
+            <div class="product-title">
+                <a href="/product/{{product.slug}}">
+                    {{product.title}}
+                </a>
+            </div>
+            <div class="product-img">
+                <a href="/product/{{product.slug}}">
+                    <img src="{{product.image.url}}" alt="{{ product.image}} ">
+                </a>
+            </div>
+
+            <div class="product-price-emp">
+                <div class="product-price">
+                    <span class="price_1">
+                        {{product.price|floatformat:2}}<small>TL</small>
+                    </span>
+                    <span class="price_2"> 
+                        <small> {{product.oldprice|floatformat:2}} TL</small>
+                    </span>
+                </div>
+            </div>
+
+            <button data-color="{{product.color.all.first}}" data-size="{{product.size.all.first}}" data-action="add" data-product="{{product.id}}" class="ml-3  update-cart"> <i class="fas fa-shopping-cart "></i> Sepete Ekle</button>
+
+
+
+        </div>
+
+        {% endfor %} {% else %}
+        <div class="alert alert-info "> İlgili bir ürün bulunamadı </div>
+        {% endif %}
+    </div>
+
+
+
+
+</div>
+
+<br> {% if reviewed %}
+
+
+<h4 style="font-family: 'Mukta', sans-serif;font-weight:bold ;color:rgb(87, 87, 87)">En Son Gezdiğiniz Ürünler</h4>
+<hr>
+
+<div class="lastview-Emp">
+    <div class="arrow-prev2">
+
+        <span>
+            <i class="fas fa-chevron-left"></i>
+        </span>
+
+    </div>
+
+    <div class="slicky-slider2">
+        {% if reviewed %} {% for ürün in reviewed %}
+
+        <div class="product-item3">
+            <div class="product-img">
+                <a href="/product/{{ürün.product.slug}}">
+
+                    <img src="{{ürün.product.image.url}}" alt="{{product.image}} ">
+                </a>
+
+            </div>
+            <div class="product-title">
+                <a href="/product/{{ürün.product.slug}}"> 
+        
+                
+                {{ürün.product.title|truncatechars:48}}
+
+                    
+                </a>
+
+            </div>
+
+            <div class="product-price-emp">
+
+                <h6>
+                    {{ürün.product.oldprice}}TL
+                </h6>
+                <h5>
+                    <span>
+                        {{ürün.product.price}}<small> TL</small>
+
+                    </span>
+                </h5>
+
+
+            </div>
+
+
+        </div>
+
+        {% endfor %} {% endif %}
+
+    </div>
+    <div class="arrow-next2">
+        <span>
+        <i class="fas fa-chevron-right"></i>
+
+        </span>
+    </div>
+</div>
+{% endif %}
+
+<br> <br>{% endblock content %}

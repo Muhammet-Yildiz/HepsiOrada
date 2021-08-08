@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% load static %} {% block title %} İletişim sayfası {% endblock title %} {% block content %} {% load crispy_forms_tags %}
+
+<div class="info_t">
+
+
+
+    <p class="top-info">
+        HepsiOrada deneyimlerimizle ilgili aklınıza takılan her türlü soruyu cevaplamak için buradayız. Bize ulaşın ve mümkün olan en kısa sürede yanıt verelim.
+        <br> <br> Her zaman tecrübe etmek istediğiniz bir şey olsa ve hepsini HepsiOrada'da bulamıyorsanız, bize bildirin ve söz veriyoruz, sizin için elimizden gelenin en iyisini yapacağız .
+    </p>
+    <br><br>
+</div>
+
+
+<div class="emp2">
+
+
+
+    <div class="form-wrapper">
+
+
+        <form method="POST" class="form">
+
+            {% csrf_token %} {{form}}
+            <button type="submit" class="btn btn-info ">Gönder  </button>
+        </form>
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.234749361663!2d29.238260499999992!3d40.88866520000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadb569d96cd93%3A0xf9f4f9d8963f2e24!2zUGVuZGlrIEvDtnByw7xzw7w!5e0!3m2!1str!2str!4v1614508330545!5m2!1str!2str"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> {% endblock content %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}"> {% endblock css %} {% block script %}
+
+<script>
+    $(function() {
+
+        var label1 = $("label[for=id_name]")
+        var label2 = $("label[for=id_email]")
+        var label3 = $("label[for=id_message]")
+
+
+        label1.html("Adınız ")
+        label2.html("E-Posta Adresiniz ")
+        label3.html("Mesajınız")
+    })
+</script>
+
+{% endblock script %}

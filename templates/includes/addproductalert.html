@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css ' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        .addproductAlert,
+        .addproductAlert2,
+        .addproductAlert3,
+        .addproductAlert4 {
+            width: 240px;
+            height: 55px;
+            border-radius: 10px;
+            padding: 16px;
+            background-color: rgba(93, 240, 64, 0.8);
+            position: fixed;
+            top: 25px;
+            right: -120px;
+            z-index: 15000;
+            display: none;
+            border-left: 8px rgb(12, 124, 12) solid;
+        }
+        
+        .addproductAlert span,
+        .addproductAlert2 span,
+        .addproductAlert3 span,
+        .addproductAlert4 span {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 520;
+            margin-left: 6px;
+            font-size: 0.9rem;
+            margin-top: 4px;
+            font-weight: bolder;
+            color: rgb(2, 95, 2);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .addproductAlert p i,
+        .addproductAlert2 p i,
+        .addproductAlert3 p i,
+        .addproductAlert4 p i {
+            width: 16px;
+            height: 16px;
+            color: green;
+            font-size: 1.1rem;
+            background-color: white;
+            border-radius: 95px;
+            margin-top: 4px;
+            margin-right: 5px;
+        }
+        
+        .times2 {
+            margin-left: 21px;
+            margin-top: 6px;
+            color: rgb(2, 95, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="alert-emp">
+
+
+    </div>
+
+    <div class="addproductAlert">
+        <p>
+            <i class="fas fa-check-circle"></i>
+        </p>
+        <span>
+            Ürün sepete eklendi 
+        </span>
+        <i class="fas fa-times times2"></i>
+
+    </div>
+
+    <div class="addproductAlert2">
+        <i class="fas fa-check-circle"></i>
+        <span>
+            Ürün sepete eklendi 
+        </span>
+        <i class="fas fa-times times2"></i>
+
+
+    </div>
+    <div class="addproductAlert3">
+        <i class="fas fa-check-circle"></i>
+        <span>
+            Ürün sepete eklendi 
+        </span>
+        <i class="fas fa-times times2"></i>
+
+
+    </div>
+    <div class="addproductAlert4">
+        <i class="fas fa-check-circle"></i>
+        <span>
+            Ürün sepete eklendi 
+        </span>
+        <i class="fas fa-times times2"></i>
+
+
+    </div>
+
+</body>
+
+<script src="{% static 'js/jquery3.5.1.js ' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+<script>
+    $(function() {
+
+        $(".times2").click(function() {
+
+
+            $(this).parent().css("display", "none")
+        })
+
+
+    })
+</script>
+
+</html>

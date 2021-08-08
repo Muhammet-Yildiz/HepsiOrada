@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% load static %} {% block title %} Kategoriler {% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/category.css'   %}"> {% endblock css %} {% block content %}
+
+<h3 class="top_title" style="font-family: 'RocknRoll One', sans-serif;">Kategoriler </h3>
+
+
+{% if not request.user.is_authenticated %}
+<br><br><br> {% endif %}
+
+
+<h3 class="top_explane">Her ihtiyaca uygun binlerce ürün çeşidi burada! </h3>
+
+<div class="categories-emp">
+
+    {% for category in Categories %}
+
+    <div class="cotegory-item">
+
+        {% if category.image %}
+        <a class="img_link" href="/category-product-list/{{category.slug}}">
+
+            <img src="{{category.image.url}}" alt="{{cotegory.image}}">
+        </a>
+
+        {% endif %}
+        <a class="category-title" href="/category-product-list/{{category.slug}}">
+            {{category.title}}
+        </a>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+
+
+
+
+{% endblock content %}
