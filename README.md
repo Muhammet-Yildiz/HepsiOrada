@@ -1,7 +1,7 @@
 
 <h1 align="center">HepsiOrada</h1>
 
- <h5 align="center"> HepsiOrada is an open-source ecommerce platform built on the Django Web Framework.</h5>
+ <h5 align="center"> HepsiOrada is an open-source ecommerce website built on the Django Web Framework.</h5>
 <!--  ## Kurulum  <br/> -->
  
 ## Installation
